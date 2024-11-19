@@ -108,7 +108,7 @@ def create_feature_map(num_qubits):
 
 def remove_low_M_gates(feature_map, metrics, M_threshold=0.6):
     """
-    Remove gates with M values below a given threshold from the feature map.
+    Remove gates with GSI values below a given threshold from the feature map.
     """
     feature_map_decomposed = feature_map.decompose()
     new_circuit = QuantumCircuit(feature_map.num_qubits)
