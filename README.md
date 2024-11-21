@@ -44,7 +44,7 @@ The optimization process follows a structured pipeline:
 
 ## Results
 
-- **Datasets:** Tested on six datasets, including BreastW, Fitness, Glass2, Heart, corral, and Diabetes.
+- **Datasets:** Tested on six datasets, including BreastW, Fitness, Glass2, Heart, Corral, and Diabetes.
 - **Performance Gains:**
   - Gate reduction: Up to **40% fewer gates**.
   - Execution time improvement: Up to **50% faster**.
