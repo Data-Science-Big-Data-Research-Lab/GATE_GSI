@@ -4,7 +4,7 @@
 
 This repository introduces a novel methodology (GATE) for optimizing quantum circuits in quantum machine learning (QML). The optimization is based on a newly developed **Gate Significance Index (GSI)**, which quantifies the contribution of individual quantum gates within a circuit. By identifying and removing gates with minimal computational impact, this approach enhances the performance of quantum circuits, reducing execution time and improving computational accuracy.
 
-Our methodology has been validated using real-world datasets, demonstrating significant improvements in quantum circuit efficiency and robustness. This work contributes to quantum computing by providing a systematic, hardware-agnostic approach to optimizing quantum circuits, paving the way for better utilization of current and future quantum hardware.
+GATE has been validated using real-world datasets, demonstrating significant improvements in quantum circuit efficiency and robustness. This work contributes to quantum computing by providing a systematic, approach to optimizing quantum circuits.
 
 ## Key Features
 
