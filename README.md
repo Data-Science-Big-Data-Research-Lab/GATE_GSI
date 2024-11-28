@@ -25,9 +25,7 @@ The **GSI** is a metric designed to evaluate the significance of each quantum ga
 
 The **GSI formula** combines these metrics:
 
-$GSI = \frac{F + E + (1 - S) + (1 - P)}{4}$
-
-GSI values range from 0 to 1.
+$GSI = \frac{F + E + (1 - S) + (1 - P)}{4}, GSI \in [0, 1] $
 
 ## Gate Assessment and Threshold Evaluation (GATE)
 
