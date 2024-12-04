@@ -3,7 +3,6 @@ from qiskit.quantum_info import Statevector, state_fidelity, entropy, partial_tr
 import numpy as np
 from qiskit_algorithms.utils import algorithm_globals
 from qiskit.circuit.library import ZZFeatureMap
-from qiskit_algorithms.optimizers import COBYLA
 from qiskit_machine_learning.kernels import FidelityQuantumKernel
 from qiskit_machine_learning.algorithms import PegasosQSVC
 from qiskit.circuit.library import RealAmplitudes
