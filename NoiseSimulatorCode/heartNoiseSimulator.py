@@ -1,6 +1,6 @@
 from pmlb import fetch_data
 import pandas as pd
-from GSI import calculate_GSI, create_feature_map, remove_low_M_gates, pegasusQSVCTrainRealDevice, pegasusQSVCTest
+from GSI import calculate_GSI_DM, create_feature_map, remove_low_M_gates, pegasusQSVCTrainNoiseSimulator, pegasusQSVCTest
 import numpy as np
 from sklearn.model_selection import train_test_split
 import time
@@ -46,7 +46,7 @@ qc.decompose().draw('mpl', filename='./circuitsQSVM/circuit_base_Heart_NoiseSimu
 
 # Use a sample from X_train to calculate metrics
 time_init = time.time()
-metrics = calculate_GSI(qc.decompose(), X_train.iloc[0].values)
+metrics = calculate_GSI_DM(qc.decompose(), X_train.iloc[0].values)
 time_end = time.time()
 
 print(f"The time to compute the GSI is {time_end - time_init}")
@@ -93,7 +93,7 @@ for idx, threshold in enumerate(thresholds):
                 f"The circuit has {numero_de_puertas} gates after removing with M_threshold = {threshold}")
 
             # Train the model using the modified feature map
-            model, score, total_time = pegasusQSVCTrainRealDevice(
+            model, score, total_time = pegasusQSVCTrainNoiseSimulator(
                 X_train, y_train, X_val, y_val, new_feature_map, "0")
 
             print(
